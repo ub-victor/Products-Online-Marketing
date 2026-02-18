@@ -61,13 +61,15 @@ body{
     padding:20px;
     border:3px solid #666;
     text-align:center;
-    max-width:400px;
+    height: 500px;
+    max-width: 500px;
 }
 
 .left-box img{
+    height: 450px;
     width:100%;
     display:block;
-    max-width:210px;
+    max-width:300px;
     margin:0;
 }
 
