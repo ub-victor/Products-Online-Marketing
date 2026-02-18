@@ -5,91 +5,108 @@
     box-sizing:border-box;
 }
 
-/* BODY */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:url("bana2.PNG");
+    font-family:Arial;
+    background-image:url("img/image2.PNG");
     background-size:cover;
+    background-repeat:no-repeat;
+    overflow:hidden; /* REMOVE SCROLL */
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.container{
+    width:98%;
+    margin:5px auto;
+    border:2px solid black;
 }
 
 /* ================= NAVBAR ================= */
 
-nav{
+.navbar{
     background:black;
-    padding:15px 0;
     text-align:center;
-    border-bottom:3px solid #00bfff;
+    padding:10px 0;
+    border-bottom:2px solid black;
 }
 
-nav a{
+.navbar a{
     color:white;
     text-decoration:none;
-    margin:0 40px;
+    margin:0 60px;
     font-weight:bold;
 }
 
-nav a:hover{
-    color:#00bfff;
-}
+/* ================= BANNER ================= */
 
-/* ================= HEADER ================= */
-
-.header{
-    background:green;
-    color:white;
-    text-align:center;
-    padding:15px;
-    font-size:38px;
-    font-weight:bold;
-    letter-spacing:4px;
-    border-bottom:3px solid #00bfff;
+.banner img{
+    width:100%;
+    height:85px;
+    display:block;
+    border-bottom:2px solid black;
 }
 
 /* ================= MAIN LAYOUT ================= */
 
-.main-container{
-    width:95%;
-    margin:20px auto;
+.main{
     display:flex;
-    gap:20px;
-    min-height:500px;
 }
 
 /* ================= LEFT SIDEBAR ================= */
 
 .left-sidebar{
     width:25%;
-    border:2px solid #00bfff;
-    padding:20px;
+    border-right:2px solid black;
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:15px;
 }
 
-.left-sidebar img{
+.left-box{
+    border:2px solid #cfcfcf;
+    padding:10px;
     width:90%;
+    text-align:center;
+}
+
+.left-box img{
+    width:100%;
+}
+
+/* ================= MIDDLE + RIGHT WRAPPER ================= */
+
+.middle-right-wrapper{
+    width:75%;
+    display:flex;
+    border-left:2px solid black;
 }
 
 /* ================= MIDDLE SIDEBAR ================= */
 
 .middle-sidebar{
-    width:25%;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+    width:30%;
+    border-right:2px solid black;
+    padding:15px;
 }
 
+/* PRODUCT BOX */
+
 .product-box{
-    border:2px solid #00bfff;
-    padding:15px;
+    border:2px solid black;
+    margin-bottom:20px;
+    padding:10px;
     text-align:center;
 }
 
+/* TITLE — NO BACKGROUND */
 .product-box h3{
     color:white;
+    font-weight:bold;
     margin-bottom:10px;
 }
 
+/* CENTER IMAGE */
 .product-box img{
     width:80%;
 }
@@ -97,49 +114,78 @@ nav a:hover{
 /* ================= RIGHT CONTENT ================= */
 
 .right-content{
-    width:50%;
-    border:2px solid #00bfff;
+    width:70%;
+    background:#ddd;
     padding:20px;
-    background:#f2f2f2;
-    color:black;
 }
 
-.right-content h2{
+/* DESCRIPTION */
+
+.description{
+    border-bottom:2px solid black;
+    padding-bottom:15px;
+}
+
+.description h2{
     margin-bottom:10px;
 }
 
-.right-content ul{
+.description ul{
     margin-left:20px;
-    margin-bottom:15px;
+    margin-top:8px;
 }
 
-.right-content form input{
-    margin:6px 0;
+/* FORM */
+
+.form-section{
+    margin-top:15px;
+}
+
+.form-section input{
+    margin:4px 0;
+}
+
+/* ================= FOOTER TITLE ================= */
+
+.footer-title{
+    width:75%;                 /* MATCH MIDDLE + RIGHT */
+    margin-left:25%;           /* START AFTER LEFT SIDEBAR */
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    padding:8px 0;
+    border-top:2px solid black;
 }
 
 /* ================= FOOTER ================= */
 
 .footer{
-    width:75%;
-    margin:0 auto 20px auto;
-    border:2px solid #00bfff;
+    width:75%;                 /* MATCH MIDDLE + RIGHT */
+    margin-left:25%;           /* ALIGN WITH MIDDLE+RIGHT */
     display:flex;
+    border-top:2px solid black;
 }
 
-.footer div{
-    flex:1;
-    padding:15px;
-    background:#f2f2f2;
-    color:black;
-    border-right:1px solid #00bfff;
+/* SOCIAL BOX */
+
+.social-box{
+    width:25%;
+    background:#eee;
+    border-right:2px solid black;
+    padding:12px;
 }
 
-.footer div:last-child{
+.social-box:last-child{
     border-right:none;
 }
 
-.footer img{
-    width:28px;
+.social-box img{
+    width:35px;
     vertical-align:middle;
-    margin-right:8px;
+}
+
+.social-box a{
+    margin-left:10px;
+    text-decoration:none;
+    color:blue;
 }
