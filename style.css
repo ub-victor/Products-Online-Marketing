@@ -5,90 +5,114 @@ body {
     background-size: cover;
 }
 
-.main-container {
+/* Main Container */
+.container {
     width: 95%;
     margin: auto;
-    border: 2px solid #000;
+    border: 2px solid black;
 }
 
-.nav {
-    background: #001f3f;
+/* Navbar */
+.navbar {
+    background: black;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
 }
 
-.nav a {
+.navbar a {
     color: white;
-    margin: 0 40px;
     text-decoration: none;
+    margin: 0 40px;
     font-weight: bold;
 }
 
+/* Banner */
 .banner img {
     width: 100%;
     height: 100px;
 }
 
-.content {
+/* Main Layout */
+.main {
     display: flex;
-    border-top: 2px solid #000;
 }
 
-.left {
+/* Left Sidebar */
+.left-sidebar {
     width: 25%;
-    border-right: 2px solid #000;
     padding: 10px;
 }
 
-.left img {
+.left-box {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+.left-box img {
     width: 100%;
 }
 
-.coat-section {
-    margin-top: 20px;
+/* Middle Sidebar */
+.middle-sidebar {
+    width: 20%;
+    padding: 10px;
 }
 
-.coat-section h3 {
+.product-box {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #0a4a7a;
     color: white;
 }
 
-.right {
-    width: 75%;
-    padding: 10px;
-    background: #ddd;
+.product-box img {
+    width: 100%;
+    margin-top: 10px;
 }
 
-.text-section {
-    border-bottom: 2px solid #000;
+/* Right Content */
+.right-content {
+    width: 55%;
+    background: #ddd;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.description {
+    border-bottom: 1px solid black;
     padding-bottom: 10px;
 }
 
 .form-section {
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .form-section input {
-    margin: 3px 0;
+    margin: 4px 0;
 }
 
-.social-title {
+/* Footer Title */
+.footer-title {
     text-align: center;
-    color: white;
     font-weight: bold;
+    color: white;
     padding: 10px;
-    border-top: 2px solid #000;
 }
 
-.social {
+/* Footer */
+.footer {
     display: flex;
-    border-top: 2px solid #000;
+    border-top: 1px solid black;
 }
 
 .social-box {
     width: 25%;
-    border-right: 2px solid #000;
+    background: #eee;
+    border-right: 1px solid black;
     padding: 10px;
-    background: #ddd;
 }
 
 .social-box img {
