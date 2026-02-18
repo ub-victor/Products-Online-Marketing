@@ -224,15 +224,24 @@ body{
     width:25%;
     background:#dcdcdc;
     border-right:2px solid black;
-    padding:15px;
-    text-align:center;
+    padding:0;
+    display:flex;
+    flex-direction:column;
 }
 
 .social-box h4{
     font-size:14px;
     color:#333;
-    margin-bottom:10px;
+    padding:8px 10px 0 10px;
+    margin:0;
     font-weight:bold;
+    text-align:left;
+}
+
+.social-content{
+    display:flex;
+    align-items:center;
+    padding:5px 0 10px 0;
 }
 
 .social-box:last-child{
@@ -240,10 +249,11 @@ body{
 }
 
 .social-box img{
-    width:30px;
-    height:30px;
+    width:45px;
+    height:45px;
     display:block;
-    margin:8px auto;
+    margin:0;
+    padding:0;
     object-fit:contain;
 }
 
@@ -251,6 +261,8 @@ body{
     color:#0066cc;
     text-decoration:none;
     font-size:13px;
+    padding:0 10px;
+    margin:0;
 }
 
 .social-box a:hover{
