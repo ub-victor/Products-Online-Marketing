@@ -79,27 +79,32 @@ body{
     display:flex;
     border-left:2px solid black;
     border-bottom:2px solid black;
+    min-height:500px;
 }
 
 /* MIDDLE SIDEBAR */
 .middle-sidebar{
-    width:30%;
+    width:20%;
     border-right:2px solid black;
-    padding:15px 10px;
-    background:#003d7a;
+    padding:0;
+    background:transparent;
     display:flex;
     flex-direction:column;
+    flex:1;
 }
 
 /* PRODUCT BOX */
 .product-box{
-    border:2px solid #0066cc;
-    margin-bottom:15px;
+    border:2px solid black;
+    margin:0;
+    margin-right:-2px;
+    margin-bottom:-2px;
     padding:10px;
-    background:#004d99;
+    background: transparent;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
+    flex:1 1 50%;
 }
 
 /* TITLE = white text only (NO background) */
@@ -107,8 +112,8 @@ body{
     color:white;
     margin-bottom:8px;
     font-size:15px;
-    border-bottom:2px solid #0099ff;
-    padding-bottom:6px;
+    border-bottom:none;
+    padding-bottom:0;
     text-align:left;
     width:100%;
 }
@@ -127,16 +132,22 @@ body{
 
 /* RIGHT CONTENT */
 .right-content{
-    width:70%;
+    width:80%;
     background:#e8e8e8;
-    padding:25px;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    flex:1;
 }
 
 /* DESCRIPTION */
 .description{
-    border-bottom:3px solid #333;
-    padding-bottom:15px;
-    margin-bottom:20px;
+    border:2px solid black;
+    margin:0;
+    margin-bottom:-2px;
+    padding:15px;
+    background:#e8e8e8;
+    flex:1;
 }
 
 .description h2{
@@ -172,8 +183,11 @@ body{
 .form-section{
     background:white;
     padding:15px;
-    border:2px solid #ccc;
-    border-radius:5px;
+    border:2px solid black;
+    border-radius:0;
+    margin-top:0;
+    margin:-2px 0 0 0;
+    flex:1;
 }
 
 .form-section p{
@@ -214,7 +228,7 @@ body{
     border-top:2px solid black;
     border-bottom:2px solid black;
     margin-left:25%;
-    background:#004d99;
+    background: transparent;
 }
 
 /* FOOTER */
